@@ -1,0 +1,6 @@
+[submodule "lib/ATD3.5-S3_Library"]
+	path = lib/ATD3.5-S3_Library
+	url = https://github.com/ArtronShop/ATD3.5-S3_Library.git
+[submodule "lib/lvgl"]
+	path = lib/lvgl
+	url = https://github.com/lvgl/lvgl.git
