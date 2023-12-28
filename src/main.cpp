@@ -11,12 +11,14 @@ void setup() {
   // Setup peripherals
   Display.begin(0); // rotation number 0
   Touch.begin();
+  Sound.begin();
   pinMode(LED_Y_PIN, OUTPUT);
   digitalWrite(LED_Y_PIN, HIGH); // off LED Y
   
   // Map peripheral to LVGL
   Display.useLVGL(); // Map display to LVGL
   Touch.useLVGL(); // Map touch screen to LVGL
+  Sound.useLVGL(); // Map speaker to LVGL
   
   // Add load your UI function
   ui_init();
