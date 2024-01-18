@@ -12,6 +12,7 @@ void setup() {
   Display.begin(0); // rotation number 0
   Touch.begin();
   Sound.begin();
+  // Card.begin(); // uncomment if you want to Read/Write/Play/Load file in MicroSD Card
   pinMode(LED_Y_PIN, OUTPUT);
   digitalWrite(LED_Y_PIN, HIGH); // off LED Y
   
@@ -19,6 +20,7 @@ void setup() {
   Display.useLVGL(); // Map display to LVGL
   Touch.useLVGL(); // Map touch screen to LVGL
   Sound.useLVGL(); // Map speaker to LVGL
+  // Card.useLVGL(); // Map MicroSD Card to LVGL File System
   
   // Add load your UI function
   ui_init();
@@ -35,5 +37,5 @@ void setup() {
 }
 
 void loop() {
-  Display.loop();
+  Display.loop(); // Keep GUI work
 }
