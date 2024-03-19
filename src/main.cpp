@@ -21,6 +21,8 @@ void setup() {
   Touch.useLVGL(); // Map touch screen to LVGL
   Sound.useLVGL(); // Map speaker to LVGL
   // Card.useLVGL(); // Map MicroSD Card to LVGL File System
+
+  Display.enableAutoSleep(120); // Auto off display if not touch in 2 min
   
   // Add load your UI function
   ui_init();
